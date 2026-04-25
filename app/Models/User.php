@@ -59,7 +59,7 @@ class User extends Authenticatable
         return url(\Illuminate\Support\Facades\Storage::url($value));
     }
 
-    public function merchants(){
+    public function merchant(){
         return $this->hasOne(Merchant::class, 'keeper_id','id');
     }
 }
